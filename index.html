@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retailer Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Clothes Store</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Orders</li>
+        <li>Products</li>
+        <li>Customers</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+    
+    <main class="main">
+      <header>
+        <h1>Retailer Dashboard</h1>
+        <input type="search" placeholder="Search..." />
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Orders</h3>
+          <p id="orders">--</p>
+        </div>
+        <div class="card">
+          <h3>Total Products</h3>
+          <p id="products">--</p>
+        </div>
+        <div class="card">
+          <h3>Revenue</h3>
+          <p id="revenue">--</p>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <h2>Product List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Stock</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="productTable">
+            <!-- JS will populate rows -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
